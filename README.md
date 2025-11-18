@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Continuous Integration (GitHub Actions)
+
+This project includes a GitHub Actions workflow at `.github/workflows/ci.yml` that runs on pushes and pull requests to `main`.
+
+What the workflow does:
+
+- Installs Node.js and `pnpm`
+- Restores a cache for `pnpm` and installs dependencies
+- Runs `pnpm run lint` (which is configured to run `biome check`)
+- Runs `pnpm run build` to verify that Next.js can build
+
+To run the same checks locally:
+
+```pwsh
+pnpm install --frozen-lockfile
+pnpm run lint
+pnpm run build
+```
+
+Deployment:
+
+- If you want to add a deployment step later, create a job in `.github/workflows/ci.yml` guarded by repository secrets for your hosting provider (for example: `VERCEL_TOKEN`, AWS keys, Netlify token). That avoids exposing credentials or accidentally pushing production from PRs.
