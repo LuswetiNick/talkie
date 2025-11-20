@@ -1,6 +1,6 @@
 import DashboardHeader from "./_components/dashboard-header";
 
-export default function DashboardLayout({
+export default async function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;

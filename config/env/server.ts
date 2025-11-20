@@ -4,6 +4,16 @@ import { z } from "zod";
 export const serverEnv = createEnv({
   server: {
     DATABASE_URL: z.url(),
+    BETTER_AUTH_SECRET: z.string().min(1),
+    ARCJET_KEY: z.string().min(1),
+    GOOGLE_CLIENT_ID: z.string().min(1, "GOOGLE_CLIENT_ID cannot be empty"),
+    GOOGLE_CLIENT_SECRET: z
+      .string()
+      .min(1, "GOOGLE_CLIENT_SECRET cannot be empty"),
+    GITHUB_CLIENT_ID: z.string().min(1, "GITHUB_CLIENT_ID cannot be empty"),
+    GITHUB_CLIENT_SECRET: z
+      .string()
+      .min(1, "GITHUB_CLIENT_SECRET cannot be empty"),
   },
   experimental__runtimeEnv: process.env,
 });

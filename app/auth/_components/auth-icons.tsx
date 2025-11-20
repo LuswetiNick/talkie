@@ -12,74 +12,74 @@ export function GoogleIcon(props: ComponentProps<"svg">) {
       <title>Google icon</title>
       <defs>
         <linearGradient id="google__a">
-          <stop offset="0" stop-color="#0fbc5c" />
-          <stop offset="1" stop-color="#0cba65" />
+          <stop offset="0" stopColor="#0fbc5c" />
+          <stop offset="1" stopColor="#0cba65" />
         </linearGradient>
         <linearGradient id="google__g">
-          <stop offset=".231" stop-color="#0fbc5f" />
-          <stop offset=".312" stop-color="#0fbc5f" />
-          <stop offset=".366" stop-color="#0fbc5e" />
-          <stop offset=".458" stop-color="#0fbc5d" />
-          <stop offset=".54" stop-color="#12bc58" />
-          <stop offset=".699" stop-color="#28bf3c" />
-          <stop offset=".771" stop-color="#38c02b" />
-          <stop offset=".861" stop-color="#52c218" />
-          <stop offset=".915" stop-color="#67c30f" />
-          <stop offset="1" stop-color="#86c504" />
+          <stop offset=".231" stopColor="#0fbc5f" />
+          <stop offset=".312" stopColor="#0fbc5f" />
+          <stop offset=".366" stopColor="#0fbc5e" />
+          <stop offset=".458" stopColor="#0fbc5d" />
+          <stop offset=".54" stopColor="#12bc58" />
+          <stop offset=".699" stopColor="#28bf3c" />
+          <stop offset=".771" stopColor="#38c02b" />
+          <stop offset=".861" stopColor="#52c218" />
+          <stop offset=".915" stopColor="#67c30f" />
+          <stop offset="1" stopColor="#86c504" />
         </linearGradient>
         <linearGradient id="google__h">
-          <stop offset=".142" stop-color="#1abd4d" />
-          <stop offset=".248" stop-color="#6ec30d" />
-          <stop offset=".312" stop-color="#8ac502" />
-          <stop offset=".366" stop-color="#a2c600" />
-          <stop offset=".446" stop-color="#c8c903" />
-          <stop offset=".54" stop-color="#ebcb03" />
-          <stop offset=".616" stop-color="#f7cd07" />
-          <stop offset=".699" stop-color="#fdcd04" />
-          <stop offset=".771" stop-color="#fdce05" />
-          <stop offset=".861" stop-color="#ffce0a" />
+          <stop offset=".142" stopColor="#1abd4d" />
+          <stop offset=".248" stopColor="#6ec30d" />
+          <stop offset=".312" stopColor="#8ac502" />
+          <stop offset=".366" stopColor="#a2c600" />
+          <stop offset=".446" stopColor="#c8c903" />
+          <stop offset=".54" stopColor="#ebcb03" />
+          <stop offset=".616" stopColor="#f7cd07" />
+          <stop offset=".699" stopColor="#fdcd04" />
+          <stop offset=".771" stopColor="#fdce05" />
+          <stop offset=".861" stopColor="#ffce0a" />
         </linearGradient>
         <linearGradient id="google__f">
-          <stop offset=".316" stop-color="#ff4c3c" />
-          <stop offset=".604" stop-color="#ff692c" />
-          <stop offset=".727" stop-color="#ff7825" />
-          <stop offset=".885" stop-color="#ff8d1b" />
-          <stop offset="1" stop-color="#ff9f13" />
+          <stop offset=".316" stopColor="#ff4c3c" />
+          <stop offset=".604" stopColor="#ff692c" />
+          <stop offset=".727" stopColor="#ff7825" />
+          <stop offset=".885" stopColor="#ff8d1b" />
+          <stop offset="1" stopColor="#ff9f13" />
         </linearGradient>
         <linearGradient id="google__b">
-          <stop offset=".231" stop-color="#ff4541" />
-          <stop offset=".312" stop-color="#ff4540" />
-          <stop offset=".458" stop-color="#ff4640" />
-          <stop offset=".54" stop-color="#ff473f" />
-          <stop offset=".699" stop-color="#ff5138" />
-          <stop offset=".771" stop-color="#ff5b33" />
-          <stop offset=".861" stop-color="#ff6c29" />
-          <stop offset="1" stop-color="#ff8c18" />
+          <stop offset=".231" stopColor="#ff4541" />
+          <stop offset=".312" stopColor="#ff4540" />
+          <stop offset=".458" stopColor="#ff4640" />
+          <stop offset=".54" stopColor="#ff473f" />
+          <stop offset=".699" stopColor="#ff5138" />
+          <stop offset=".771" stopColor="#ff5b33" />
+          <stop offset=".861" stopColor="#ff6c29" />
+          <stop offset="1" stopColor="#ff8c18" />
         </linearGradient>
         <linearGradient id="google__d">
-          <stop offset=".408" stop-color="#fb4e5a" />
-          <stop offset="1" stop-color="#ff4540" />
+          <stop offset=".408" stopColor="#fb4e5a" />
+          <stop offset="1" stopColor="#ff4540" />
         </linearGradient>
         <linearGradient id="google__c">
-          <stop offset=".132" stop-color="#0cba65" />
-          <stop offset=".21" stop-color="#0bb86d" />
-          <stop offset=".297" stop-color="#09b479" />
-          <stop offset=".396" stop-color="#08ad93" />
-          <stop offset=".477" stop-color="#0aa6a9" />
-          <stop offset=".568" stop-color="#0d9cc6" />
-          <stop offset=".667" stop-color="#1893dd" />
-          <stop offset=".769" stop-color="#258bf1" />
-          <stop offset=".859" stop-color="#3086ff" />
+          <stop offset=".132" stopColor="#0cba65" />
+          <stop offset=".21" stopColor="#0bb86d" />
+          <stop offset=".297" stopColor="#09b479" />
+          <stop offset=".396" stopColor="#08ad93" />
+          <stop offset=".477" stopColor="#0aa6a9" />
+          <stop offset=".568" stopColor="#0d9cc6" />
+          <stop offset=".667" stopColor="#1893dd" />
+          <stop offset=".769" stopColor="#258bf1" />
+          <stop offset=".859" stopColor="#3086ff" />
         </linearGradient>
         <linearGradient id="google__e">
-          <stop offset=".366" stop-color="#ff4e3a" />
-          <stop offset=".458" stop-color="#ff8a1b" />
-          <stop offset=".54" stop-color="#ffa312" />
-          <stop offset=".616" stop-color="#ffb60c" />
-          <stop offset=".771" stop-color="#ffcd0a" />
-          <stop offset=".861" stop-color="#fecf0a" />
-          <stop offset=".915" stop-color="#fecf08" />
-          <stop offset="1" stop-color="#fdcd01" />
+          <stop offset=".366" stopColor="#ff4e3a" />
+          <stop offset=".458" stopColor="#ff8a1b" />
+          <stop offset=".54" stopColor="#ffa312" />
+          <stop offset=".616" stopColor="#ffb60c" />
+          <stop offset=".771" stopColor="#ffcd0a" />
+          <stop offset=".861" stopColor="#fecf0a" />
+          <stop offset=".915" stopColor="#fecf08" />
+          <stop offset="1" stopColor="#fdcd01" />
         </linearGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
@@ -168,7 +168,7 @@ export function GoogleIcon(props: ComponentProps<"svg">) {
           xlinkHref="#google__h"
         />
         <filter
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           height="1.116"
           id="google__q"
           width="1.097"
@@ -178,7 +178,7 @@ export function GoogleIcon(props: ComponentProps<"svg">) {
           <feGaussianBlur stdDeviation="1.701" />
         </filter>
         <filter
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           height="1.02"
           id="google__k"
           width="1.033"
@@ -192,7 +192,7 @@ export function GoogleIcon(props: ComponentProps<"svg">) {
         </clipPath>
       </defs>
       <g
-        clip-path="url(#google__i)"
+        clipPath="url(#google__i)"
         transform="matrix(.95792 0 0 .98525 -90.174 -78.856)"
       >
         <path
@@ -250,10 +250,10 @@ export function GitHubIcon(props: ComponentProps<"svg">) {
     <svg fill="none" viewBox="0 0 1024 1024" {...props}>
       <title>GitHub icon</title>
       <path
-        clip-rule="evenodd"
+        clipRule="evenodd"
         d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
         fill="#ffff"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         transform="scale(64)"
       />
     </svg>

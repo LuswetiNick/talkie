@@ -40,7 +40,7 @@ export function NavItem({
         className={cn(
           "flex items-center gap-2 font-medium text-sm transition-colors duration-300 hover:text-muted-foreground",
           className,
-          isActive && "rounded-md bg-muted px-2 py-1 text-muted-foreground"
+          isActive && "rounded-md bg-accent px-2 py-1 text-muted-foreground"
         )}
         href={href}
       >
