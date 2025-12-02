@@ -3,10 +3,10 @@ import { createAuthClient } from "better-auth/react";
 import { clientEnv } from "@/config/env/client";
 import type { auth } from "./auth";
 
-const baseUrl = clientEnv.NEXT_PUBLIC_BETTER_AUTH_URL;
+const baseUrl = clientEnv.NEXT_PUBLIC_APP_URL;
 
 if (!baseUrl) {
-  throw new Error("NEXT_PUBLIC_BETTER_AUTH_URL is not defined");
+  throw new Error("NEXT_PUBLIC_APP_URL is not defined");
 }
 
 export const authClient = createAuthClient({

@@ -19,10 +19,13 @@
     "rules": {
       "recommended": true,
       "suspicious": {
-        "noUnknownAtRules": "off"
+        "noUnknownAtRules": "off",
+        "noEvolvingTypes": "off",
+        "noImplicitAnyLet": "off"
       },
       "style": {
-        "useConsistentTypeDefinitions": "off"
+        "useConsistentTypeDefinitions": "off",
+        "useBlockStatements": "off"
       },
       "performance": {
         "noNamespaceImport": "off"

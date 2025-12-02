@@ -3,9 +3,9 @@ import { z } from "zod";
 
 export const clientEnv = createEnv({
   client: {
-    NEXT_PUBLIC_BETTER_AUTH_URL: z.url(),
+    NEXT_PUBLIC_APP_URL: z.url(),
   },
   runtimeEnv: {
-    NEXT_PUBLIC_BETTER_AUTH_URL: process.env.NEXT_PUBLIC_BETTER_AUTH_URL,
+    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
   },
 });

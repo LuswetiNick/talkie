@@ -38,13 +38,21 @@ export function NavItem({
       <Link
         aria-current={isActive ? "page" : undefined}
         className={cn(
-          "flex items-center gap-2 font-medium text-sm transition-colors duration-300 hover:text-muted-foreground",
+          "flex items-center gap-2 font-medium text-sm transition-colors duration-300",
           className,
-          isActive && "rounded-md bg-accent px-2 py-1 text-muted-foreground"
+          // Match app/globals.css theme tokens for active state
+          // Use accent background with readable foreground and subtle shadow
+          isActive &&
+            "rounded-md bg-accent px-2 py-1 text-accent-foreground shadow-sm"
         )}
         href={href}
       >
-        <Icon className={cn("h-4 w-4", isActive && "text-muted-foreground")} />
+        <Icon
+          className={cn(
+            "h-4 w-4",
+            isActive ? "text-accent-foreground" : undefined
+          )}
+        />
         <span>{title}</span>
       </Link>
     </li>
