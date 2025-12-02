@@ -50,7 +50,7 @@ export default function DashboardUser() {
               alt={session?.user?.name}
               src={session?.user?.image ?? undefined}
             />
-            <AvatarFallback className="rounded-md">
+            <AvatarFallback className="rounded-full">
               {getInitials(session?.user?.name)}
             </AvatarFallback>
           </Avatar>
