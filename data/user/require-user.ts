@@ -17,6 +17,10 @@ export const requireSession = cache(async () => {
   const session = await auth.api.getSession({
     headers: await headers(),
   });
+  if (!session) {
+    redirect("/auth/get-started");
+  }
+
   return session;
 });
 

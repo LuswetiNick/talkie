@@ -71,7 +71,7 @@ export function DataTable<TData, TValue>({
           ) : (
             <TableRow>
               <TableCell
-                className="h-19 text-center text-muted-foreground"
+                className="h-20 text-center text-muted-foreground"
                 colSpan={columns.length}
               >
                 No results.

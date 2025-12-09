@@ -12,7 +12,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -33,7 +32,10 @@ export const AgentIdHeader = ({
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink asChild className="font-medium text-muted-foreground text-lg">
+          <BreadcrumbLink
+            asChild
+            className="font-medium text-lg text-muted-foreground"
+          >
             <Link href="/dashboard/agents">My Agents</Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
@@ -53,7 +55,7 @@ export const AgentIdHeader = ({
 
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
-        <Button size="icon-lg" variant="outline">
+        <Button aria-label="Agent actions" size="icon-lg" variant="outline">
           <EllipsisVertical />
         </Button>
       </DropdownMenuTrigger>

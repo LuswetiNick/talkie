@@ -21,10 +21,13 @@ export default async function AgentPage({ params }: AgentPageProps) {
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Suspense fallback={<AgentIdViewLoading />}>
-        {/* TODO: Add error boundary */}
-        <ErrorBoundary fallback={<AgentIdViewError />}>
-          <AgentsIdView agentId={agentId} />
-        </ErrorBoundary>
+        <HydrationBoundary state={dehydrate(queryClient)}>
+          <Suspense fallback={<AgentIdViewLoading />}>
+            <ErrorBoundary fallback={<AgentIdViewError />}>
+              <AgentsIdView agentId={agentId} />
+            </ErrorBoundary>
+          </Suspense>
+        </HydrationBoundary>
       </Suspense>
     </HydrationBoundary>
   );

@@ -83,7 +83,7 @@ function CommandResponsiveDialog({
   if (isMobile) {
     return (
       <Drawer {...props}>
-        <DrawerContent className="overflow-hidden p-0">
+        <DrawerContent className={cn("overflow-hidden p-0", className)}>
           <DrawerHeader className="sr-only">
             <DrawerTitle>{title}</DrawerTitle>
             <DrawerDescription>{description}</DrawerDescription>

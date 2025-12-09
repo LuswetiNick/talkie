@@ -43,13 +43,12 @@ export default function AgentsView() {
 export const AgentsViewLoading = () => (
   <LoadingState
     description="This may take a few seconds..."
-    title="Loading Agent"
+    title="Loading Agents"
   />
 );
-
 export const AgentsViewError = () => (
   <ErrorState
-    description="There was an error loading the agent."
+    description="There was an error loading agents."
     title="Oops! Something went wrong."
   />
 );
