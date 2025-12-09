@@ -13,6 +13,13 @@ export const requireUser = cache(async () => {
 
   return session.user;
 });
+export const requireSession = cache(async () => {
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
+  return session;
+});
+
 export const getCurrentUser = async () => {
   const session = await auth.api.getSession({
     headers: await headers(),

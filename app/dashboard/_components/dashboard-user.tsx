@@ -1,7 +1,6 @@
 "use client";
 import { LogOut } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { GeneratedAvatar } from "@/components/generated-avatar";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
@@ -44,23 +43,15 @@ export default function DashboardUser() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        {session?.user.image ? (
-          <Avatar className="size-8 cursor-pointer rounded-full">
-            <AvatarImage
-              alt={session?.user?.name}
-              src={session?.user?.image ?? undefined}
-            />
-            <AvatarFallback className="rounded-full">
-              {getInitials(session?.user?.name)}
-            </AvatarFallback>
-          </Avatar>
-        ) : (
-          <GeneratedAvatar
-            className="size-8 cursor-pointer rounded-full"
-            seed={session?.user?.name || getInitials(session?.user?.name)}
-            variant="initials"
+        <Avatar className="size-8 cursor-pointer rounded-full">
+          <AvatarImage
+            alt={session?.user.name}
+            src={session?.user.image ?? undefined}
           />
-        )}
+          <AvatarFallback className="rounded-full">
+            {getInitials(session?.user.name)}
+          </AvatarFallback>
+        </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
@@ -69,23 +60,17 @@ export default function DashboardUser() {
       >
         <DropdownMenuLabel className="p-0 font-normal">
           <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
-            {session?.user.image ? (
-              <Avatar className="size-8 cursor-pointer rounded-full">
-                <AvatarImage
-                  alt={session?.user?.name}
-                  src={session?.user?.image ?? undefined}
-                />
-                <AvatarFallback className="rounded-md">
-                  {getInitials(session?.user?.name)}
-                </AvatarFallback>
-              </Avatar>
-            ) : (
-              <GeneratedAvatar
-                className="size-8 cursor-pointer rounded-full"
-                seed={session?.user?.name || getInitials(session?.user?.name)}
-                variant="initials"
+            <Avatar className="size-8 cursor-pointer rounded-full">
+              <AvatarImage
+                alt={session?.user?.name}
+                src={session?.user?.image ?? undefined}
               />
-            )}
+              <AvatarFallback className="rounded-full">
+                {" "}
+                {getInitials(session?.user?.name)}
+              </AvatarFallback>
+            </Avatar>
+
             <div className="grid flex-1 text-left text-sm leading-tight">
               <span className="truncate font-medium">
                 {session?.user?.name}

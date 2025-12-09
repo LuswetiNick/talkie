@@ -40,8 +40,7 @@ export function NavItem({
         className={cn(
           "flex items-center gap-2 font-medium text-sm transition-colors duration-300",
           className,
-          // Match app/globals.css theme tokens for active state
-          // Use accent background with readable foreground and subtle shadow
+
           isActive &&
             "rounded-md bg-accent px-2 py-1 text-accent-foreground shadow-sm"
         )}

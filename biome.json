@@ -29,6 +29,9 @@
       },
       "performance": {
         "noNamespaceImport": "off"
+      },
+      "complexity": {
+        "noVoid": "off"
       }
     },
     "domains": {

@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { redirect } from "next/navigation";
 import Logo from "@/components/logo";
 import {
   Card,
@@ -10,6 +8,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { getCurrentUser } from "@/data/user/require-user";
+import Link from "next/link";
+import { redirect } from "next/navigation";
 import { SocialAuthButtons } from "../_components/social-auth-buttons";
 
 export default async function GetStartedPage() {
