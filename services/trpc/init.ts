@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/suspicious/useAwait: <explanation> */
 import { initTRPC, TRPCError } from "@trpc/server";
 import { cache } from "react";
 import { requireSession } from "@/data/user/require-user";

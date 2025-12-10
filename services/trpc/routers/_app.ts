@@ -1,7 +1,9 @@
 import { agentsRouter } from "@/data/agents/procedures";
+import { meetingsRouter } from "@/data/meetings/procedures";
 import { createTRPCRouter } from "../init";
 export const appRouter = createTRPCRouter({
   agents: agentsRouter,
+  meetings: meetingsRouter,
 });
 // export type definition of API
 export type AppRouter = typeof appRouter;
