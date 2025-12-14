@@ -14,6 +14,9 @@ export const serverEnv = createEnv({
     GITHUB_CLIENT_SECRET: z
       .string()
       .min(1, "GITHUB_CLIENT_SECRET cannot be empty"),
+    STREAM_VIDEO_SECRET_KEY: z
+      .string()
+      .min(1, "STREAM_VIDEO_SECRET_KEY cannot be empty"),
   },
   experimental__runtimeEnv: process.env,
 });

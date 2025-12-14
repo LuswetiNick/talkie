@@ -4,14 +4,15 @@ import type { ColumnDef } from "@tanstack/react-table";
 import { Video } from "lucide-react";
 import { GeneratedAvatar } from "@/components/generated-avatar";
 import { Badge } from "@/components/ui/badge";
-import type { AgentGetOne } from "@/data/agents/types";
+import type { AgentGetMany } from "@/data/agents/types";
 
-export const columns: ColumnDef<AgentGetOne>[] = [
+export const columns: ColumnDef<AgentGetMany[number]>[] = [
   {
     accessorKey: "name",
     header: "Agent Name",
     cell: ({ row }) => (
-      <div className="flex items-center gap-y-1">
+      <div className="flex items-center">
+        {" "}
         <div className="flex items-center gap-x-2">
           <GeneratedAvatar
             className="size-6"

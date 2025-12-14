@@ -4,8 +4,11 @@ import { z } from "zod";
 export const clientEnv = createEnv({
   client: {
     NEXT_PUBLIC_APP_URL: z.url(),
+    NEXT_PUBLIC_STREAM_VIDEO_API_KEY: z.string().min(1),
   },
   runtimeEnv: {
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
+    NEXT_PUBLIC_STREAM_VIDEO_API_KEY:
+      process.env.NEXT_PUBLIC_STREAM_VIDEO_API_KEY,
   },
 });

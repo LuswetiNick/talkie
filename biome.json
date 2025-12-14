@@ -25,13 +25,15 @@
       },
       "style": {
         "useConsistentTypeDefinitions": "off",
-        "useBlockStatements": "off"
+        "useBlockStatements": "off",
+        "noEnum": "off"
       },
       "performance": {
         "noNamespaceImport": "off"
       },
       "complexity": {
-        "noVoid": "off"
+        "noVoid": "off",
+        "useSimplifiedLogicExpression": "off"
       },
       "a11y": {
         "noSvgWithoutTitle": "off"
