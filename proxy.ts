@@ -15,5 +15,5 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/dashboard/:path*"], // Apply middleware to dashboard and all subroutes
+  matcher: ["/dashboard/:path*", "/call/:path*"], // Apply middleware to dashboard, call, and all their subroutes
 };

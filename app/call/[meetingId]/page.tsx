@@ -1,13 +1,7 @@
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
-import { Suspense } from "react";
-import { ErrorBoundary } from "react-error-boundary";
 import { requireUser } from "@/data/user/require-user";
 import { getQueryClient, trpc } from "@/services/trpc/server";
-import {
-  MeetingIdView,
-  MeetingIdViewError,
-  MeetingIdViewLoading,
-} from "../_components/meeting-id-view";
+import { CallView } from "../_components/call-view";
 
 interface MeetingPageProps {
   params: Promise<{ meetingId: string }>;
@@ -20,14 +14,9 @@ export default async function MeetingPage({ params }: MeetingPageProps) {
   await queryClient.prefetchQuery(
     trpc.meetings.getOne.queryOptions({ id: meetingId })
   );
-  // TODO: Prefetch meetings transcript
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <Suspense fallback={<MeetingIdViewLoading />}>
-        <ErrorBoundary fallback={<MeetingIdViewError />}>
-          <MeetingIdView meetingId={meetingId} />
-        </ErrorBoundary>
-      </Suspense>
+      <CallView meetingId={meetingId} />
     </HydrationBoundary>
   );
 }

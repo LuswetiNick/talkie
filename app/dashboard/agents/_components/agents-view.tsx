@@ -1,14 +1,14 @@
 "use client";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
+import { DataPagination } from "@/components/data-pagination";
 import EmptyState from "@/components/empty-state";
 import ErrorState from "@/components/error-state";
 import LoadingState from "@/components/loading-state";
+import { DataTable } from "@/components/ui/data-table";
 import { useAgentsFilters } from "@/hooks/use-agents-filters";
 import { useTRPC } from "@/services/trpc/client";
 import { columns } from "./columns";
-import { DataPagination } from "./data-pagination";
-import { DataTable } from "./data-table";
 
 export default function AgentsView() {
   const router = useRouter();
@@ -18,19 +18,24 @@ export default function AgentsView() {
     trpc.agents.getMany.queryOptions({ ...filters })
   );
 
+  if (data.items.length === 0) {
+    return (
+      <EmptyState
+        description="Create an agent to join your meetings. Each agent will follow your instructions."
+        title="No agents found"
+      />
+    );
+  }
   return (
     <div className="flex flex-1 flex-col gap-y-4 pb-4">
-      {data.items.length === 0 && (
-        <EmptyState
-          description="Create an agent to join your meetings. Each agent will follow your instructions."
-          title="No agents found"
-        />
-      )}
       <DataTable
         columns={columns}
         data={data.items}
-        onRowClick={(row) => router.push(`/dashboard/agents/${row.id}`)}
+        onRowClick={(row: { id: string }) =>
+          router.push(`/dashboard/agents/${row.id}`)
+        }
       />
+
       <DataPagination
         onPageChange={(page) => setFilters({ page })}
         page={filters.page}

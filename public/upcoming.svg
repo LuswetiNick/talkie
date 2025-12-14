@@ -8,11 +8,18 @@
   <rect x="12" y="37" width="166" height="50" rx="8" fill="var(--color-card, oklch(1 0 0))"/>
   <rect x="12.25" y="37.25" width="165.5" height="49.5" rx="7.75" stroke="var(--color-border, oklch(0.922 0 0))" stroke-width="0.5"/>
 </g>
+
+<!-- Light gray background box -->
 <rect x="20" y="45" width="34" height="34" rx="6" fill="var(--color-base-50, oklch(0.9851 0 0))"/>
 
+<!-- Perfectly Centered Video Camera Icon -->
+<rect x="28.5" y="56" width="13" height="10" rx="2" fill="var(--color-base-600, oklch(0.439 0 0))"/>
+<path d="M41.5 58L45.5 56V66L41.5 64V58Z" fill="var(--color-base-600, oklch(0.439 0 0))"/>
+
+<!-- Lines -->
 <rect x="63" y="49" width="72" height="4" rx="2" fill="var(--color-primary, oklch(0.8719 0.1829 125.59))"/>
-<rect x="63" y="61" width="64" height="4" rx="2" fill="var(--color-secondary, oklch(0.5591 0.0631 185.87))"/>
-<rect x="63" y="73" width="94" height="4" rx="2" fill="var(--color-border, oklch(0.922 0 0))"/>
+<rect x="63" y="61" width="64" height="4" rx="2" fill="var(--color-primary-100, oklch(0.9676 0.0628 121.5))"/>
+<rect x="63" y="73" width="94" height="4" rx="2" fill="var(--color-primary-50, oklch(0.9866 0.0288 120.05))"/>
 
 <defs>
   <filter id="filter0_d" x="20.125" y="25.0625" width="148.75" height="75.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -28,12 +35,12 @@
     <feOffset dy="4"/>
     <feGaussianBlur stdDeviation="3"/>
     <feColorMatrix type="matrix" values="0 0 0 0 0.1 0 0 0 0 0.15 0 0 0 0 0.14 0 0 0 0.05 0"/>
-    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+    <feBlend mode="normal" in2="effect1_dropShadow" result="effect1_dropShadow"/>
     <feMorphology radius="4" operator="erode" in="SourceAlpha" result="effect2_dropShadow"/>
     <feOffset dy="12"/>
     <feGaussianBlur stdDeviation="8"/>
     <feColorMatrix type="matrix" values="0 0 0 0 0.1 0 0 0 0 0.15 0 0 0 0 0.14 0 0 0 0.07 0"/>
-    <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
+    <feBlend mode="normal" in2="effect2_dropShadow" result="effect2_dropShadow"/>
     <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
   </filter>
 </defs>
